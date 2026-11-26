@@ -1,0 +1,17 @@
+.wrapp{
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+    
+}
+
+
+.wrappsidee{
+        display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: aquamarine;
+    width: 120px;
+    height: 521px;
+    /* gap: 50px; */
+}

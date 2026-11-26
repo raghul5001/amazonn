@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+   <input type="text" placeholder="Enter the number 1" id="number1"/>
+    <input type="text" placeholder="Enter the number 2" id="number2"/>
+    <button onclick="handleAdd()">Add</button>
+    <button>sub</button>
+    <button>Mul</button>
+
+    <h1 id="ans"></h1>
+
+    <script>
+
+     
+
+       function handleAdd(){
+
+          let num1 = document.getElementById("number1").value
+          let num2 = document.getElementById("number2").value
+          let add = parseInt(num1) + parseInt(num2)
+          document.getElementById("ans").textContent = add
+       }
+
+
+       
+    </script>
+</body>
+</html>
+ 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+  
+    <h1>Login page</h1>
+
+   
+    <input type="text" placeholder="Enter your user name" id="username"/>
+    <input type="password" placeholder="Enter your password" id="password"/>
+   
+
+    <button onclick="handleLogin()">Login</button>
+
+    <script>
+
+        function handleLogin(){
+
+      
+         let uname = document.getElementById("username").value 
+          let pass = document.getElementById("password").value 
+
+          let signupuser = localStorage.getItem("username")
+          let signupass = localStorage.getItem("password")
+         
+
+         if(uname == '' || pass == '' ){
+            alert("Pls fill all the details");
+            
+         } else if( uname == signupuser && pass == signupass){
+              alert("Login success");
+         }
+         
+         else{
+            alert("Please enter the correct creds");
+            
+         }
+
+        }
+
+
+    </script>
+</body>
+</html>

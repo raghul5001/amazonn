@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Signup.css">
+</head>
+<body>
+  
+    <h1>Signup page</h1>
+
+    <input type="text" placeholder="Enter your first name" id="firstname"/>
+    <input type="text" placeholder="Enter your last name" id="lastname"/>
+    <input type="text" placeholder="Enter your user name" id="username"/>
+    <input type="password" placeholder="Enter your password" id="password"/>
+    <input type="number" placeholder="Enter your phone number" id="phonenumber"/>
+
+
+       <button onclick="handleSignup()">Signup</button>
+   
+   
+
+    <script>
+
+        function handleSignup(){
+
+       let fname = document.getElementById("firstname").value 
+        let lname = document.getElementById("lastname").value 
+         let uname = document.getElementById("username").value 
+          let pass = document.getElementById("password").value 
+           let phnumber = document.getElementById("phonenumber").value 
+
+         if(fname == '' || lname == '' || uname == '' || pass == '' || phnumber == ''){
+            alert("Pls fill all the details");
+            
+         }else{
+            localStorage.setItem("username" , uname)
+            localStorage.setItem("password" , pass)
+            alert("Signup success");
+            window.location.href = "Login.html"
+         }
+
+        }
+
+
+    </script>
+</body>
+</html>
